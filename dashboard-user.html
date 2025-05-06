@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h2>Welcome, User!</h2>
+
+    <h3>Submit a Complaint</h3>
+    <form onsubmit="submitComplaint(event)">
+      <input type="text" id="complaint-title" placeholder="Title" required>
+      <textarea id="complaint-desc" placeholder="Complaint Description" rows="4" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <h3>Your Complaints</h3>
+    <ul id="complaint-list"></ul>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
